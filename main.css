@@ -1,0 +1,250 @@
+body
+{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+.main--content
+{
+    position: relative;
+    background: url('images/bg-mobile.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.icons--content
+{
+    position: absolute;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+
+.icons
+{
+    background: hsl(228, 56%, 26%);
+    margin: 1rem;
+    padding: 2rem;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 10px 80px 10px 10px;
+    -webkit-border-radius: 10px 80px 10px 10px;
+    -moz-border-radius: 10px 80px 10px 10px;
+    -ms-border-radius: 10px 80px 10px 10px;
+    -o-border-radius: 10px 80px 10px 10px;
+}
+.icons .logo
+{
+    margin-left: 1rem;
+}
+.icons img{
+    display: block;
+}
+.icons .icon--document,
+.icons .icon--folder,
+.icons .icon--upload
+{
+    display: inline-block;
+    padding: 0.75rem;
+    margin: 2rem 0 0 1rem;
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.icons .icon--document img,
+.icons .icon--folder img,
+.icons .icon--upload img
+{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.content--info
+{
+    background: hsl(228, 56%, 26%);
+    margin: 1rem;
+    padding: 2rem;
+    width: 15rem;
+    height: 6rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.content
+{
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    margin-top: 0;
+    text-align: center;
+}
+
+.content span
+{
+    font-weight: 700;
+}
+
+.slider--container
+{
+    position: relative;
+    background: hsl(229, 57%, 11%);
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.slider
+{
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    top: 1px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.slider--dot
+{
+    position: absolute;
+    background: white;
+    top: 1px;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-left: 93.5%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slider--range
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: hsl(243, 100%, 93%);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.data--info
+{
+    display: flex;
+    background: white;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.data--info span
+{
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* margin-left: 1rem; */
+    display: inline-block;
+    /* margin: 1rem 0.5rem 1rem 1rem; */
+}
+.data--info p
+{
+    display: inline-block;
+    color: hsl(229, 7%, 55%);
+    font-size: 0.8rem;
+    margin-left: 0.75rem;
+    font-weight: 500;
+    
+}
+.attribution
+{
+    position: absolute;
+    top: 92%;
+    text-align: center;
+    margin: 0 19.5%;
+    color: hsl(243, 100%, 93%);
+}
+
+@media(min-width: 40rem)
+{
+
+    .main--content
+    {
+        background: hsl(229, 57%, 11%) url('images/bg-desktop.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    .icons--content
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end; 
+        top: 25%;
+        left: 20%;
+        
+    }
+    .content--info
+    {
+        width: 25rem;
+    }
+    .data--info
+    {
+        position: absolute;
+        top: 10%;
+        left: 78%;
+        width: 8rem;
+        height: 4rem;
+        border-radius: 10px 10px 0px 10px;
+        -webkit-border-radius: 10px 10px 0px 10px;
+        -moz-border-radius: 10px 10px 0px 10px;
+        -ms-border-radius: 10px 10px 0px 10px;
+        -o-border-radius: 10px 10px 0px 10px;
+}
+    .data--info span
+    {
+        font-size: 2rem;
+    }
+    .data--info p
+    {
+        font-size: 0.7rem;
+    }
+
+    .data--info__tip
+    {
+        position: absolute;
+        border-top: 0 solid transparent;
+        border-right: 30px solid white;
+        border-bottom: 30px solid transparent ;
+        top:30%;
+        left: 89.3%;
+    }
+    .attribution
+    {
+        margin: 0 40.5%;
+    }
+}
